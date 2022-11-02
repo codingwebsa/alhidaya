@@ -14,7 +14,7 @@ const Book = ({ data }) => {
     >
       <Link href={`book/${data.slug}`}>
         <Image
-          src={data.imgUrl}
+          src={`https:${data.image.fields.file.url}`}
           width={150}
           height={175}
           objectFit="cover"
@@ -27,9 +27,10 @@ const Book = ({ data }) => {
         {data.name}
       </h2>
       <span className="text-xs text-gray-500 text-left w-max line-clamp-1 leading-6 rounded-full font-medium">
-        {data.author.length > 25
+        {/* {data.author.length > 25
           ? data.author.substring(0, 25) + "..."
-          : data.author}
+          : data.author} */}
+        ড. মোহাম্মদ মানজুরে ইলাহী
       </span>
       {data.discountPrice ? (
         <div className="flex gap-2 items-end mt-1">

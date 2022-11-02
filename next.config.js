@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains:['ikhlasstore.com']
+    domains:['ikhlasstore.com',"images.ctfassets.net"]
   }
 }
 
