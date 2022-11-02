@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ancent: #0e1c25;
+  --main: #004f32;
+  --light: #1cbe8e;
+}
+::selection {
+  background: var(--ancent);
+  color: var(--soft);
+}
+@font-face {
+  src: url("../assets//font/font-one.ttf");
+  font-family: "Bangla Font";
+}
+@font-face {
+  src: url("../assets//font/font-two.ttf");
+  font-family: "Title Font";
+}
+@font-face {
+  src: url("../assets//font/banglaFont.ttf");
+  font-family: "alhidaya";
+}
+body {
+  color: var(--ancent);
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+span:has(svg) {
+  display: block;
+}
+.nav {
+  box-shadow: rgba(50, 50, 93, 25) 0 50px 100px -20px;
+}
+.BOOKSEC {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.5rem;
+  /* place-items: center; */
+  justify-content: center;
+}
+
+/* .BOOKSEC > article {
+  flex: 1 1 140px;
+  max-width: 180px;
+  margin: 0 auto;
+} */
+
+.HOMECATEGORY {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.5rem;
+  place-items: center;
+}
